@@ -1,0 +1,70 @@
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, rgb(255, 241, 214), rgb(245, 180, 218));
+}
+
+
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20;
+}
+.title{
+    position: center;
+}
+fieldset{
+    border: 3px solid  rgb(196, 67, 157);
+}
+legend{
+    border: 1px solid  rgb(196, 67, 157);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(196, 67, 157);
+    border-radius: 8px;
+    
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(196, 67, 157);
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(202, 46, 194), rgb(245, 180, 218));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(238, 113, 232), rgb(245, 180, 218));
+}

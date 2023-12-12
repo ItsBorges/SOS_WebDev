@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="enpt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <a link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></a> 
+    <title>Formulário</title>
+
+</head>
+<body>
+    
+<div class="box">
+    <form>
+        <fieldset>
+            <legend><B>Formulário</B></legend>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome completo</label>
+            </div> 
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">E-Mail</label>
+            </div>   <br>
+            <p>Sexo:</p>
+           
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+              
+                <br>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                
+                <br>
+                <label for="outro">Outro</label>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                 <br>
+            <p>Habilidades</p>
+            <div>
+                <label>Foco</label>
+                <input type="checkbox" name="habil" id="foco">
+            </div>
+            <div>
+                <label>Rápido</label>
+                <input type="checkbox" name="habil" id="rapido">
+            </div>
+            <div>
+                <label>Estilização</label>
+                <input type="checkbox" name="habil" id="estilo">
+            </div>
+            <div>
+                <label>Comunicação</label>
+                <input type="checkbox" name="habil" id="com">
+            </div>
+            <div>
+                <label>Outro</label>
+                <input type="checkbox" name="habil" id="outro">
+            </div> <br>
+            <div>
+                <label>Idade</label>
+                <input type="number" name="idade" id="idade">
+            </div>
+            <div>
+                <label>Ano de nascença</label>
+                <input type="number" name="ano" id="ano">
+            </div>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
